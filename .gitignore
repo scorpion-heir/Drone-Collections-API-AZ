@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+.vscode
+api-env
+__pycache__
+.env
+migrations 
