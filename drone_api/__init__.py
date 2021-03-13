@@ -14,8 +14,14 @@ from authlib.integrations.flask_client import OAuth
 #import for flsk_marshmallow 
 from flask_marshmallow import Marshmallow 
 
+# for REACT
+from flask_cors import CORS
+
 app = Flask(__name__)
 app.config.from_object(Config)
+
+# for REACT
+CORS(app)
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
